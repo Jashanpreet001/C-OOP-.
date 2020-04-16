@@ -1,0 +1,36 @@
+//
+//  main.cpp
+//  Introduction to object-oriented programming.
+//
+//  Created by JASHANPREET SINGH on 16/04/20.
+//  Copyright © 2020 JASHANPREET SINGH. All rights reserved.
+//
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+class human_beings{
+public:
+    string name;
+    
+    void introduce(){
+        cout<<"Hi, I am "<< name;
+        }
+};
+
+int main(){
+    
+    human_beings jashan;
+    jashan.name = "Jashan\n";
+    jashan.introduce();
+    
+    human_beings jessica;
+    jessica.name="Jessica\n";
+    jessica.introduce();
+    
+    
+    
+    return 0;
+    
+}
