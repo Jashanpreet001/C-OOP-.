@@ -1,0 +1,35 @@
+//
+//  main.cpp
+//  Introduction to object-oriented programming.
+//  object stored in heap(dynamic)
+//  Created by JASHANPREET SINGH on 16/04/20.
+//  Copyright © 2020 JASHANPREET SINGH. All rights reserved.
+//
+
+#include <iostream>
+using namespace std;
+
+class human_beings{
+public:
+    string name;
+    
+    void introduce(){
+        
+        cout<<"Hi "<< name<<endl;
+    }
+};
+
+int main(){
+    
+    human_beings jashan;
+    human_beings *jessica = new human_beings();
+    
+    jashan.name="Jashan";
+    jashan.introduce();
+    
+    jessica->name="Jessica";
+    jessica->introduce();
+    
+    return 0;
+    
+}
